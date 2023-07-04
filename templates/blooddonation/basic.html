@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <title>{%block title%}{%endblock%}</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <style>
+    *
+    {
+      margin: 0;
+      padding: 0;
+    }
+    button
+    {
+        width: auto;
+        background-color: rgb(221, 241, 0);
+        border-radius: 10px;
+        font-size: 30px;
+        padding: 5px;
+        border: none;
+    }
+    .key
+    {
+      background-color: rgb(221, 241, 0);
+      padding: 5px;
+        margin-top: 0;
+        text-align: center;
+    }
+  </style>
+  {% block css%}{%endblock%}
+</head>
+
+<body>
+  <div class="key">
+    <form method="post">
+        {%csrf_token%}
+        <button value="donate" type="submit" name="donate">donate</button>
+        <button value="home" type="submit" name="home">home</button>
+        <button value="buy" type="submit" name="buy">buy</button>
+        <button value="camp" type="submit" name="camp">upcoming camps</button>
+        <button value="register" type="submit" name="register">register camp</button>
+        <button value="history" type="submit" name="history">history of your donation</button>
+    </form>
+</div>
+  {% block body%}{%endblock%}
+</body>
+
+</html>

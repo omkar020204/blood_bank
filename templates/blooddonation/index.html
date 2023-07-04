@@ -1,0 +1,214 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank</title>
+</head> -->
+{% extends 'blooddonation/basic.html' %}
+{%block title%}blood bank{%endblock%}
+{%block css%}
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Playfair+Display&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Noto Sans;
+    }
+
+    .head {
+        background-color: red;
+        height: auto;
+        width: 100%;
+        /* margin-top: 40px; */
+        text-align: center;
+        font-size: 40px;
+        font-family: Playfair Display;
+        color: white;
+    }
+
+    .content {
+        padding-left:70px ;
+        padding-right:70px ;
+        padding-top:30px; ;
+        padding-bottom:30px ;
+    }
+
+    .heading {
+        padding-top: 10px;
+        font-size: 40px;
+    }
+
+    .heading2 {
+        padding-top: 10px;
+        font-size: 25px;
+    }
+
+    .normal {
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    .key
+    {
+        text-align: center;
+        padding: 5px;
+    }
+    button
+    {
+        width: auto;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 30px;
+    }
+</style>
+{%endblock%}
+<body>
+    {%block body%}
+    <div class="head">
+        welcome to the world of BLOOD
+    </div>
+    
+    <div class="content">
+        <div class="heading">
+            Overview
+        </div>
+        <div class="normal">
+            Blood donation is a voluntary procedure that can help save lives. There are several types of blood donation.
+            Each type helps meet different medical needs.
+        </div>
+        <div class="heading2">
+            Whole blood donation
+        </div>
+        <div class="normal">
+            Whole blood donation is the most common type of blood donation. During this donation, you donate about a
+            pint (about half a liter) of whole blood. The blood is then separated into its components — red cells,
+            plasma and sometimes platelets.
+        </div>
+        <div class="heading2">
+            Apheresis
+        </div>
+        <div class="normal">
+            During apheresis, you are hooked up to a machine that collects and separates different parts of your blood.
+            These blood components include red cells, plasma and platelets. The machine then returns the remaining parts
+            of the blood back to you.
+            <li>Platelet donation (plateletpheresis) collects only platelets. Platelets are the cells that help stop
+                bleeding by clumping and forming plugs in blood vessels (clotting).
+
+                Donated platelets are commonly given to people with clotting problems or cancer and people who will have
+                organ transplants or major surgeries.</li>
+            <li>
+                Double red cell donation allows you to donate a concentrated amount of red blood cells. Red blood cells
+                deliver oxygen to your organs and tissues.
+
+                Donated red blood cells are typically given to people with severe blood loss, such as after an injury or
+                accident, and people with anemia (low hemoglobin).
+            </li>
+            <li>Plasma donation (plasmapheresis) collects the liquid portion of the blood (plasma). Plasma helps blood
+                clot and contains antibodies that help fight off infections.
+
+                Plasma is commonly given to people in emergency and trauma situations to help stop bleeding.
+
+            </li>
+        </div>
+        <div class="heading">Why it's done</div>
+        <div class="normal">
+            You agree to have blood drawn so that it can be given to someone who needs a blood transfusion.
+
+            Millions of people need blood transfusions each year. Some may need blood during surgery. Others depend on
+            it after an accident or because they have a disease that requires certain parts of blood. Blood donation
+            makes all of this possible. There is no substitute for human blood — all transfusions use blood from a
+            donor.
+
+
+        </div>
+        <div class="heading">Risks</div>
+        <div class="normal">Blood donation is safe. New, sterile disposable equipment is used for each donor, so there's
+            no risk of getting a bloodborne infection by donating blood.
+
+            Most healthy adults can donate a pint (about half a liter) safely, without health risks. Within a few days
+            of a blood donation, your body replaces the lost fluids. And after two weeks, your body replaces the lost
+            red blood cells. 
+        </div>
+        <div class="heading">How you prepare</div>
+        <div class="heading2">Eligibility requirements</div>
+        <div class="normal">
+            To be eligible to donate whole blood, plasma or platelets, you must be:
+            <li>In good health.</li>
+            <li>At least 16 or 17 years old, depending on the law in your state. Some states allow legal minors to donate with parent permission. While there's no legal upper age limit, policies may vary between individual donor centers.</li>
+            <li>At least 110 pounds (about 50 kilograms).</li>
+            <li>Able to pass the physical and health-history assessments.</li>
+            Eligibility requirements differ slightly among different types of blood donation.
+        </div>
+        <div class="heading2">Food and medications</div>
+        <div class="normal">
+            Before your blood donation:
+            <li>Get plenty of sleep the night before you plan to donate.</li>
+            <li>Eat a healthy meal before your donation. Avoid fatty foods, such as a hamburger, fries or ice cream.</li>
+            <li>Drink plenty of water before the donation.</li>
+            <li>Check to see if any medications you are taking or recently took would prevent you from donating. For example, if you are a platelet donor, you must not take aspirin for two days prior to donating. Talk to a member of your health care team before you stop taking any medications in order to donate blood.
+            </li>
+            Eligibility requirements differ slightly among different types of blood donation.
+        </div>
+        <div class="heading">what can you expect</div>
+        <div class="heading2">
+            Before the procedure
+        </div>
+        <div class="normal">
+            Before you can donate blood, you will be asked to fill out a confidential medical history. It includes questions about behaviors known to carry a higher risk of bloodborne infections — infections that are transmitted through blood.
+
+Because of the risk of bloodborne infections, not everyone can donate blood. The following are groups that are not eligible to donate blood:
+        <li>Anyone who has used injected drugs, steroids or another substance not prescribed by a health care provider in the past three months</li>
+        <li>Men who have had sexual contact with other men in the past three months</li>
+        <li>Anyone who has had a positive test for HIV</li>
+        <li>Anyone who has a congenital coagulation factor deficiency
+        </li>
+        <li>Anyone who has engaged in sex for money or drugs in the past three months</li>
+        <li>Anyone who, in the past 12 months, has had close contact with — lived with or had sexual contact with — a person who has viral hepatitis</li>
+        <li>Anyone who has had babesiosis, a rare and severe tick-borne disease, or the parasitic infection Chagas' disease</li>
+        You will also have a brief physical exam. The exam includes checking your blood pressure, pulse and temperature. A small sample of blood is taken from a finger prick and is used to check the oxygen-carrying part of your blood (hemoglobin level). If your hemoglobin concentration is within a healthy range, and you've met all the other screening requirements, you can donate blood.
+        </div>
+        <div class="heading2">COVID-19 concerns</div>
+        <div class="normal">The virus that causes coronavirus disease 2019 (COVID-19) hasn't been shown to be transmitted through blood transfusions. However, the U.S. Food and Drug Administration suggests waiting to donate blood for at least 10 days after a positive diagnostic test for COVID-19 without symptoms or for at least 10 days after symptoms of COVID-19 have completely gone away.
+
+            Those who have tested positive for COVID-19 antibodies but didn't have a diagnostic test and never developed symptoms can donate without a waiting period or having a diagnostic test done before donation.
+            
+            If you get a nonreplicating, inactivated or mRNA-based COVID-19 vaccine — the only forms of the vaccine currently approved in the United States — you can donate blood without a waiting period.
+            
+            </div>
+            <div class="heading2">During the procedure</div>
+            <div class="normal">You lie or sit in a reclining chair with your arm extended on an armrest. If you have a preference for which arm or vein is used, tell the person who is collecting your blood. A blood pressure cuff or tourniquet is placed around your upper arm to fill your veins with more blood. This makes the veins easier to see and easier to insert the needle into. It also helps fill the blood bag more quickly. Then the skin on the inside of your elbow is cleaned.
+
+            A new, sterile needle is inserted into a vein in your arm. This needle is attached to a thin, plastic tube and a blood bag. Once the needle is in place, you tighten your fist several times to help the blood flow from the vein. First, blood is collected into tubes for testing. Then blood is allowed to fill the bag, about a pint (about half a liter). The needle is usually in place about 10 minutes. When your donation is finished, the needle is removed, a small bandage is placed on the needle site and a dressing is wrapped around your arm.
+            
+            Another method of donating blood becoming increasingly common is apheresis. During apheresis, you are hooked up to a machine that can collect and separate different parts of your blood, such as red cells, plasma and platelets. This process allows more of a single component to be collected. It takes longer than standard blood donation — typically up to two hours.
+            </div>
+            <div class="heading2">
+                After the procedure
+            </div>
+            <div class="normal">After donating, you sit in an observation area, where you rest and eat a light snack. After 15 minutes, you can leave. After your blood donation:
+                <li>Drink extra fluids.</li>
+                <li>Avoid strenuous physical activity or heavy lifting for about five hours.</li>
+                <li>If you feel lightheaded, lie down with your feet up until the feeling passes.</li>
+                <li>Keep your bandage on and dry for the next five hours.</li>
+                <li>If you have bleeding after removing the bandage, put pressure on the site and raise your arm until the bleeding stops.</li>
+                <li>If bruising occurs, apply a cold pack to the area periodically during the first 24 hours.</li>
+                <li>Consider adding iron-rich foods to your diet to replace the iron lost with blood donation.</li>
+                Contact the blood donor center or your health care provider if you:
+                <li>Forgot to report any important health information to the blood donation center.</li>
+                <li>Have signs and symptoms of an illness, such as a fever, within several days after your blood donation.</li>
+                <li>Are diagnosed with COVID-19 within 48 hours after donating blood.</li>
+            </div>
+            <div class="heading">Result</div>
+            <div class="heading2">Testing</div>
+            <div class="normal">Your blood will be tested to determine your blood type and your Rh factor. Blood type is classified as A, B, AB or O. The Rh factor refers to the presence or absence of a specific antigen — a substance capable of stimulating an immune response — in the blood. You'll be classified as Rh positive or Rh negative, meaning you do or don't carry the antigen. This information is important because your blood type and Rh factor must be compatible with the blood type and Rh factor of the person receiving your blood.
+
+                Your blood will also be tested for bloodborne diseases, such as hepatitis and HIV. If these tests are negative, the blood is distributed for use in hospitals and clinics. If any of these tests are positive, the donor center notifies you, and your blood is discarded.</div>
+    </div>
+    {%endblock%}
+<!-- </body>
+
+</html> -->
